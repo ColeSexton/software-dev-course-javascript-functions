@@ -30,6 +30,13 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes a name and a role (e.g., "Alice", "speaker")
 // - Returns a string in the format: "Name: Alice, Role: Speaker"
 
+function badge(name, role){
+    return `Name: ${name}, Role: ${role}`;
+
+}
+console.log(badge("Alice", "Speaker"));
+
+
 // Steps:
 // 1. Define the function with two parameters.
 // 2. Format the output string properly.
@@ -44,6 +51,16 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes number of attendees and cost per attendee.
 // - Applies a 10% discount if attendees exceed 100.
 // - Returns the total cost.
+
+function cost(num1,num2){
+    let total = num1 * num2;
+    if (num1 >= 100){
+        total *= .9;
+    }
+    return total;
+}
+
+console.log("Total cost: " + cost(50,20));
 
 // Steps:
 // 1. Multiply attendees by cost.
@@ -64,6 +81,11 @@ reusable functions that solve specific tasks. This activity encourages:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
 
+function emailInput(email){
+    return email.includes("@") && email.includes(".");
+
+}
+console.log(emailInput("cole@cole.com"));
 
 // ============================================
 // 🧠 Collaborative Steps
